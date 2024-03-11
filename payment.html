@@ -1,0 +1,55 @@
+<!-- @import { AppComponent } from '@angular/core';
+
+declare var Razorpay: any; 
+
+@Component({
+  selector: 'app-razorpay-payment',
+   template: ` 
+    <div class="razorpay-payment">
+      <h2>Razorpay Payment Integration Using Angular</h2>
+      <br />
+      <input type="text" placeholder="Enter Amount" [(ngModel)]="amount" />
+      <br /><br />
+      <button (click)="handleSubmit()">Submit</button>
+    </div>
+   `,
+  styleUrls: ['./payment.component.css']
+})
+export class RazorpayPaymentComponent {
+  amount: string = '';
+ 
+  function handleSubmit() {
+    if (this.amount === "") {
+      alert("Please enter amount");
+    } else {
+      const options = {
+        key: "rzp_test_N5HWOSGZ8wh6kq",
+        key_secret: "gi5IZGu3Dr49Y541rLquf5yh",
+        amount: this.amount * 100,
+        currency: "INR",
+        name: "STARTUP_PROJECTS",
+        description: "For testing purpose",
+        handler: (response: any) => {
+          alert(response.razorpay_payment_id);
+        },
+        prefill: {
+          name: "Vignesh",
+          email: "Kuttyvicky10122@gmail.com",
+          contact: "9094119173"
+        },
+        notes: {
+          address: "Razorpay Corporate office"
+        },
+        theme: {
+          color: "#3399cc"
+        }
+      };
+
+      const pay = new Razorpay(options);
+      pay.open();
+    }
+  }
+ } -->
+
+
+ 

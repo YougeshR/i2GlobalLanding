@@ -1,0 +1,24 @@
+.mainbox{position:fixed;bottom: 56px;right: 56px;z-index: 99;}
+.mainbox label{position: relative;height: 56px;width: 56px;cursor: pointer;transition: all 0.3s ease-out;}
+.mainbox label::before{z-index: 999;content:""; background: url('../images/ci_close-big.png') center center no-repeat;position: absolute;height: 100%;width: 100%;left: 0;top: 0;background-color:#E95454;border-radius:35px 35px 35px 35px;opacity: 0;display: flex;justify-content: center;align-items: center;font-weight: 400;}
+#checkfresh{display: none;}
+#checkfresh:checked ~ label::before{opacity: 1; }
+.media-icons{position: absolute ;left:50%;top:-120px;transform:translate(-50% ,-75%);color: #fff;display:grid;gap:16px;border-radius: 35px;z-index: 1;opacity: 0;pointer-events: none;transition: all 0.3s ease-out;}
+.img-wrap{width: 56px;height: 56px;display: flex;justify-content: center;align-items: center;filter: drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15)) drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15));}
+#checkfresh:checked ~ .media-icons{opacity: 1;pointer-events: auto;}
+.m-count {position: absolute;right: 0;background-color: #EE1E1E;;border: 2px solid #fff;width: 16px;height: 16px;font-size: 7px;font-weight: 700;border-radius: 100%;color: #fff;text-align: center;display: flex;align-items: center;justify-content: center;}
+.img-icon-sm{display: none;}
+.img-icon{display:block; color: aqua;}
+
+.floating-wrap-wec{padding: 12px 12px 11px 12px;position: absolute;width: 246px;border-radius: 5px;background-color:#fff;color: #111;font-size: 14px;font-weight: 400;line-height: 21px ;top: -52px;right: 68px;z-index: 99;filter: drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15)) drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15));}
+.tool-close span{background-color: #fff;width: 14px;height:16;font-size: 12px;font-weight: 400;cursor: pointer;color: #000;position: absolute;right: 0;top: 0;}
+.pointer {width: 10px;height: 10px;background-color: #fff;transform: rotate(-45deg);position: absolute;right: -5px;border-bottom: 1px solid #fff;bottom:20%;filter: drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15)) drop-shadow(0px 4px 18px rgba(24, 39, 75, 0.15));}
+.hide{display: none !important;}
+.floating-wrap-wec {display: none;}
+
+@media only screen and (max-width: 768px) {
+	.img-icon-sm{display: block;}
+	.img-icon{display:none;}
+	.floating-wrap-wec{width: 216px;top: -43px;right: 71px;font-size: 12px;line-height: 18px;}
+	.mainbox{bottom: 32px;right: 20px;}
+}

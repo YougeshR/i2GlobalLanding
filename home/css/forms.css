@@ -1,0 +1,490 @@
+.global-form form .select-options, .global-form form .form-group {position: relative;margin-bottom: 34px;}
+.global-form form .select-options .form-control{padding: 0px;}
+.global-form form .contact-number {position: relative;}
+.global-form form .form-control{color: #231f20;background-color:transparent;position:relative;height:41px;font-size: 13px;font-weight: 400; border:1px solid #bbbbbb!important;border-radius:4px !important;outline:0!important;box-shadow:none!important;padding:10px 16px 11px;top:auto;line-height:21px}
+.global-form form .form-label{position:absolute;font-size: 18px;color: #777777;pointer-events:none;z-index:2;top:20px;transition: all;transition-duration: .2s;}
+.global-form form .form-group.isd-select{position:relative;top:-1px;width:30%;display:inline-block;}
+.global-form form .form-group.isd-select i.select-dropdown{position: absolute;top: 50%;right: 0;}
+.global-form form .form-group.isd-select select{-webkit-appearance:none; -moz-appearance: none; appearance: none;color: #777777;}
+
+.global-form form .contact-number .form-group.isd-select{position: relative;top: 0;width: 20%;}
+.global-form form .contact-number .form-group.phone{width: 80%;margin: 0;}
+.global-form form .contact-number .select-options .form-control{padding:12px 30px 12px 15px!important;border-right: 0px !important;border-top-right-radius: 0px !important;border-bottom-right-radius: 0px !important;}
+.global-form form .form-group textarea{padding: 10px 16px 11px;height:50px;transition:0.2s ease all;}
+.global-form form .form-group textarea::placeholder{font-size:13px!important;line-height: 20px;color:#777777;transition:0.2s ease all;}
+.global-form form .form-group .floating-label {position: absolute;pointer-events: none;left: 16px;top: 10px;font-size: 13px;line-height: 20px; color: #777777;transition: 0.2s ease all;}
+.global-form form .select-options .error{position: absolute;display: block;margin-top: 5px;font-size: 10px;color: #ec4e5d;line-height: normal;}
+.global-form form .form-group .error{position: absolute;display: block;margin-top: 2px;font-size: 11px;color:#ec4e5d;line-height:17px;}
+.global-form form .pay-btn a {display:inline-block;margin-bottom:0!important;position:relative;color:#fff;background-color:#231f20;margin:0px 0 34px;padding:12px 52px 12px 12px;border:0 none!important;border-radius:4px;text-decoration:none!important;box-shadow:none!important;outline:0!important;text-transform:uppercase;}
+.global-form form .pay-btn a span {line-height:normal;margin-top:0!important;position: absolute;padding: 9px 16px;display: inline-block;top: 0px; right: 0px; background-color: #1d1d1d;border-bottom-right-radius: 4px;border-top-right-radius: 4px;}
+.global-form form .form-toggled .form-label{top:-15px!important}
+.global-form form .pay-btn button {display:inline-block;margin-bottom:0!important;position:relative;color:#fff;background: #000000;margin:0px 0 34px;padding:12px 52px 12px 12px;border:0 none!important;border-radius:4px;text-decoration:none!important;box-shadow:none!important;outline:0!important;text-transform:uppercase;cursor: pointer;}
+.global-form form .pay-btn button span {line-height:normal;margin-top:0!important;position: absolute;padding: 9px 16px;display: inline-block;top: 0px; right: 0px; background-color: #1d1d1d;border-bottom-right-radius: 4px;border-top-right-radius: 4px;}
+
+/* .global-form form .form-group .inputText:focus ~ .floating-label,
+.global-form form .form-control:focus ~ .floating-label {top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .form-group .inputText:not(:focus):valid ~ .floating-label,
+.global-form form .form-group .inputText:not(:focus):valid ~ .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .form-group .inputText:focus:invalid ~ .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px;opacity: 1;color: #ec4e5d;background: #fff;padding: 0 6px;} */
+
+
+.global-form form .form-group .inputText.required:focus ~ .floating-label,
+.global-form form .form-control:focus ~ .floating-label {top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .form-group .inputText.required:not(:focus):valid ~ .floating-label,
+.global-form form .form-group .inputText.required:not(:focus):valid ~ .floating-label,
+.global-form form .form-group .inputText.required[readonly=""] + .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .form-group .inputText.required:focus:invalid ~ .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px;opacity: 1;color: #ec4e5d;background: #fff;padding: 0 6px;}
+
+
+.global-form form .form-group .inputText.not-required ~ .floating-label {position: absolute;pointer-events: none;left: 16px;top: 10px;font-size: 13px;line-height: 20px; color: #777777;transition: 0.2s ease all;}
+.global-form form .form-group .inputText.not-required:focus ~ .floating-label {top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .form-group .inputText.not-required:not(:placeholder-shown) ~ .floating-label {top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+
+
+.global-form .select-options i.common-icons{position:absolute;top: 16px !important;right:9px;width:14px;transform: scale(.66666666);pointer-events: none;}
+.global-form form .select-options.form-group .select-floating-label {position: absolute;pointer-events: none;left: 17px;top: 10px;font-size: 13px;line-height: 20px; color: #777777;transition: 0.2s ease all;}
+.global-form form .select-options.form-group .select-floating-label.value-selected {top: -9px !important;left: 10px !important;font-size: 12px !important;line-height: 18px; opacity: 1;color: #777 !important;background: #fff;padding: 0 6px;}
+
+
+.customize-select button[title="Select City"] .filter-option-inner-inner {color: #ffffff;height: 14px;}
+.customize-select button[title="Select Country"] .filter-option-inner-inner {color: #ffffff;height: 14px;}
+.customize-select button[title="Select Course"] .filter-option-inner-inner {color: #ffffff;height: 14px;}
+.customize-select button[title="Course Name"] .filter-option-inner-inner {color: #ffffff;height: 14px;}
+
+.customize-select.show + .select-floating-label {top: -9px !important;left: 10px !important;font-size: 12px !important;line-height: 18px !important; opacity: 1;color: #231f20 !important;background: #fff;padding: 0 6px;}
+
+
+
+
+
+/* validation css new */
+.global-form form .form-group .form-control:valid{border-color:#bbbbbb !important;color:#231f20!important}
+.global-form form .form-group .form-control:valid ~ .floating-label{color:#777 !important}
+
+.global-form form .form-group .form-control:invalid{border-color:#bbbbbb !important;}
+.global-form form .form-group .form-control:invalid ~ .floating-label{color: #777777;}
+
+.global-form form .form-group .form-control:focus{border-color:#ec4e5d;}
+.global-form form .form-group .form-control:focus:invalid{border-color:#ec4e5d!important;color:#ec4e5d}
+.global-form form .form-group .form-control:focus:invalid ~ .floating-label,
+.global-form form .form-group .form-control:focus:invalid ~ .floating-message{color:#ec4e5d!important}
+
+/* revised css for validations */
+.global-form form .contact-number .select-options .form-control:valid{border:1px solid #231f20!important}
+.global-form form .form-group .form-control.show-error{border: 1px solid #ec4e5d !important;color:#ec4e5d!important}
+.global-form form .form-group .form-control.show-error ~ .floating-label,
+.global-form form .form-group .form-control.show-error ~ .floating-message{color:#ec4e5d!important;background: #fff!important;top:-9px!important;padding:0 6px!important;left:10px!important;font-size: 12px;line-height: 18px;}
+.global-form form .form-group .form-control.show-error:focus ~ .floating-label,
+.global-form form .form-group .form-control.show-error ~ span.floating-message{color:#ec4e5d!important;background: #fff!important;top:-9px!important;padding:0 6px!important;left:10px!important;font-size: 12px;line-height: 18px;}
+.global-form select:invalid ~ .isd-code{border-color:#ec4e5d !important}
+.global-form select:valid ~ .isd-code{border-color:#231f20 !important}
+.global-form select:invalid ~ .select-options .bootstrap-select{border-color:#ec4e5d !important}
+.global-form select:valid ~ .select-options .bootstrap-select{border-color:#231f20 !important}
+.global-form select.show-error ~ .isd-select{border-color:#ec4e5d !important} 
+.global-form select.show-error ~ .select-options .bootstrap-select{border-color:#ec4e5d !important} 
+.global-form select:invalid{border-color:#e798a0!important;color:#ec4e5d!important}
+.global-form form select.show-error{border:1px solid #ec4e5d!important;color:#ec4e5d!important}
+.global-form select.show-error ~ .global-form form .bootstrap-select{border-color:#ec4e5d}
+.global-form form .select-options .show-error{border:1px solid #ec4e5d!important;color:#ec4e5d!important}
+.global-form form .form-group textarea.form-control:valid ~ .floating-message,
+.global-form form .form-group textarea.form-control:focus:valid ~ .floating-message{color:#777!important;background: #fff!important;top:-6px;padding:0 6px!important;left:10px!important}
+.global-form form .form-group textarea.form-control:invalid ~ .floating-message,
+.global-form form .form-group textarea.form-control:focus:invalid ~ .floating-message{color:#ec4e5d;background: #fff!important;top:-6px;padding:0 6px!important;left:10px!important}
+.global-form form .form-group textarea.form-control.show-error ~ .floating-message{color:#ec4e5d!important;background: #fff!important;top:-6px;padding:0 6px!important;left:10px!important}
+.global-form form .form-group textarea.form-control:not(:focus):invalid ~ .floating-message{color:#777777;top:10px}
+.global-form form .select-options .form-control:not(.show-error){border:1px solid #231f20}
+.global-form form .select-options .form-control:not(.show-error):invalid{border-color:#bbbbbb}
+/* revised css for validations */
+.global-form form .select-options .form-control.is-valid{border:1px solid #231f20}
+.global-form form .select-options .form-control:not(.is-valid):invalid{border-color:#bbbbbb}
+.global-form form .select-options .form-control:not(.is-valid){border:1px solid #231f20}
+.global-form form .select-options .form-control:not(.is-valid):invalid{border-color:#bbbbbb}
+.global-form .select-options .isd-code.show-error ~ .phone .form-control{border-color:#ec4e5d!important}
+
+.global-form form .form-group textarea:placeholder-shown + span.floating-message{font-size: 12px;background: #fff;color: #777777;position: absolute;transition:0.2s ease all;}
+.global-form form .form-group textarea:placeholder-shown ~ span.floating-message{font-size: 12px;background: #fff;color: #777777;position: absolute;transition:0.2s ease all;}
+.global-form form .form-group textarea::-webkit-input-placeholder{opacity: 0;transition: inherit;}
+.global-form form .form-group textarea:focus::-webkit-input-placeholder {opacity: 1;transition:0.2s ease all;}
+.global-form form .form-group textarea:not(:placeholder-shown) ~ span.floating-message,
+.global-form form .form-group textarea:focus ~ span.floating-message{position: absolute;font-size: 12px;opacity: 1;color: #777777;background: #fff;padding: 0px 6px;transition:0.2s ease all}
+
+.global-form form .form-group textarea::-webkit-input-placeholder{opacity: 0;transition: inherit;}
+.global-form form .form-group textarea:focus::-webkit-input-placeholder {opacity: 1;transition:0.2s ease all;}
+.global-form form .form-group textarea:not(:placeholder-shown) + label,
+.global-form form .form-group textarea:focus + label{transform: translate(10px, -75px) scale(1);font-size: 12px;opacity: 1;color: #231f20;background: #fff;padding: 0px 6px;transition:0.2s ease all}
+
+.global-form form .contact-number .form-group.isd-select{width: 20%;}
+.global-form form .contact-number .select-options .form-control{padding: 12px 10px;}
+.global-form form .select-options .form-control.is-valid{border-color:#231f20!important;border:1px solid #231f20!important}
+/*************************************************************************************************************/
+/* for phone number on cllick starts */
+.global-form form .contact-number-full .form-control{padding-left: calc(20% + 16px);}
+.global-form form .contact-number-full .form-group.phone{position:relative;margin-bottom: 32px;width: 100%;}
+.global-form form .contact-number-full .form-group.isd-select{position: absolute;top: 0;width:20%;z-index: 1;}
+.global-form form .contact-number-full .form-group .error{bottom: -19px;}
+.global-form form .contact-number-full .form-control.isd-code{padding: 0px;border-width: 0 1px 0 0 !important;border-radius: 0px !important;}
+.global-form form .contact-number-full .form-group .select-options .error{bottom: -30px;}
+/* .global-form form .contact-number-full .form-group .select-options i.common-icons{top:22px;} */
+.global-form form .contact-number-full .form-group .floating-label{position: absolute;pointer-events: none;left: calc(20% + 16px);top: 11px;font-size: 13px;line-height: 18px; color: #777777;transition: 0.2s ease all;}
+.global-form form .contact-number-full .form-group .floating-phone{position: absolute;pointer-events: none;left: 16px;top: 13px;font-size: 13px;line-height: 18px; color: #777777;transition: 0.2s ease all;}
+.global-form form .contact-number-full .form-group .inputText:focus ~ .floating-label,
+.global-form form .contact-number-full .form-control:focus ~ .floating-label,
+.global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label,
+.global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+.global-form form .contact-number-full .bootstrap-select > .dropdown-menu {width: 250px;max-width: 250px !important;}
+.global-form form .contact-number-full .bootstrap-select .dropdown-menu li a.dropdown-item.active{color: #231f20 !important;text-decoration: none !important;background-color: #bbbbbb !important;}
+.global-form form .contact-number-full .bootstrap-select .dropdown-menu li a.dropdown-item:hover{background: #bbbbbb;}
+.global-form form .contact-number-full .bootstrap-select .dropdown-menu li a.dropdown-item:focus{outline: none;}
+.global-form form .contact-number-full .bootstrap-select .dropdown-toggle .filter-option-inner-inner{color:#231f20;overflow: hidden;font-size: 13px;line-height: 18px;margin-bottom: 11px;transform: translateY(1px);}
+.global-form form .contact-number-full .bootstrap-select button[title="Select ISD"] .filter-option-inner-inner{color: #777777;font-size: 13px;line-height: 18px;transform: translateY(2px);}
+/* for phone number on cllick ends */
+/*************************************************************************************************************/
+
+.try-for-free-modal .modal-dialog{max-width: 887px!important;}
+.try-for-free-modal .modal-header {padding: 30px 30px 0px; border: none;display:inline-block}
+.try-for-free-modal .black-close-icon{vertical-align: top;}
+.try-for-free-modal .to-close{display: inline-block;right: 16px;position: absolute;top: 16px;z-index:1}
+.try-for-free-modal .to-close button{outline:0!important;}
+.try-for-free-modal .modal-popup-header {margin-bottom:30px}
+
+/* Corporate Page Form Style Starts  */
+
+.corporate-page-popup-model .modal-body {padding: 0px;}
+.corporate-page-popup-model .to-close {display: inline-block;position: absolute;top: 10px;right: 20px;z-index: 1;}
+.corporate-page-popup-model .to-close button {outline: 0!important;width: 14px;height: 14px;}
+.corporate-page-popup-model .modal-dialog {max-width: 920px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content {border-radius: 2px 0 0 2px;background-color: #f7faf7;padding: 32px;height: 100%;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content .pop-left-content-heading {color: #231f20;font-size: 15px;font-weight: 700;line-height: 22px;margin-bottom: 20px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content .pop-left-content-subheading {color: #231f20;font-size: 13px;font-weight: 400;line-height: 20px;margin-bottom: 10px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content ul {margin-bottom: 60px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content ul li {position: relative;color: #000000;font-size: 13px;line-height: 20px;margin-bottom: 8px;padding-left: 21px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-left-content ul li::before{content: "";width: 7px;height: 12px;position: absolute;left: 0;top: 5px;background-image: url(../../../d2o2utebsixu4k.cloudfront.net/assets/icons/f-icon-sprite.png);background-position: -755px -75px;background-color: transparent;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form {padding: 32px 32px 32px 2px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form { position: relative;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .optional-heading {position: relative; color: #231f20;font-size: 12px;font-weight: 600;line-height: 20px;margin-bottom: 25px;text-decoration: none;display: block;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .optional-heading.collapsed:before{position: absolute;content:"";right: 0;top: 50%;transform:translateY(-50%);background: url('../../../d2o2utebsixu4k.cloudfront.net/assets/icons/f-icon-sprite.png') no-repeat -753px -129px;width: 13px;height: 13px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .optional-heading:before {position: absolute;content:"";right: 0;top: 50%;transform:translateY(-50%);background: url('../../../d2o2utebsixu4k.cloudfront.net/assets/icons/f-icon-sprite.png') no-repeat -333px -134px;width: 13px;height: 3px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .pop-right-content-heading {color: #231f20;font-size: 15px;font-weight: 700;line-height: 22px;margin-bottom: 0px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .pop-right-content-subheading {color: #231f20;font-size: 13px;font-weight: 400;line-height: 20px;margin-bottom: 35px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit {margin-top: 15px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn {border-radius: 4px;background: #000000; color: #ffffff;font-size: 14px;font-weight: 600;border: none;text-decoration: none;padding: 10px 46px 11px 16px;right: 0;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn:hover,
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn:focus {border: none;outline: none;box-shadow:none;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn:before {content: "";background-image: url(../../../d2o2utebsixu4k.cloudfront.net/assets/icons/icon-sprite.png);width: 9px;height: 14px;position: absolute;right: 32px;top: 50%;transform: translateY(-50%);background-position: -181px -158px;transition: all .3s ease-in-out;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn:focus:before,
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .kh3-btn:hover:before {right: 24px;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .cancel-btn {border-radius: 4px;background:#ffffff;color: #000000;font-size: 14px;font-weight: 600;border: none;text-decoration: none;padding: 8px 16px;margin-right: 24px;border: 1px solid #000000;}
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .cancel-btn:hover,
+.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .form-submit .cancel-btn:focus {border: 1px solid #000000;outline: none;box-shadow:none;}
+
+.corporate-page-popup-model .corporate-page-popup-form.download-brochure-popup .pop-right-form,
+.corporate-page-popup-model .corporate-page-popup-form.free_assessment .pop-right-form {padding: 32px;}
+
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content .pop-left-content-heading {color: #231f20;font-size: 15px;font-weight: 700;line-height: 22px;margin-bottom: 20px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content .pop-left-content-subheading {color: #231f20;font-size: 13px;font-weight: 400;line-height: 20px;margin-bottom: 10px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content {border-radius: 2px 0 0 2px;background-color: #f7faf7;padding: 32px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content ul {margin-bottom: 60px}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content ul li {position: relative;color: #000000;font-size: 13px;line-height: 20px;margin-bottom: 8px;padding-left: 21px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-left-content ul li::before{content: "";position: absolute;left: 0;background: url("../../corporate_page/images/orange-right-arrow.html") no-repeat;width: 7px;height: 12px;top: 3px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content {background-color: #ffffff;padding: 0px;max-width: 290px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .success-img {margin-bottom: 20px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .pop-right-content-heading {color: #231f20;font-size: 16px;font-weight: 400;line-height: 22px;margin-bottom: 5px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .pop-right-content-heading span{font-weight: 700;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .pop-right-content-subHeading {color: #000000;font-size: 13px;line-height: 20px;margin-bottom: 19px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .cancel-btn {border-radius: 4px;background:#ffffff;color: #000000;font-size: 14px;font-weight: 600;border: none;text-decoration: none;padding: 8px 16px;margin-right: 24px;border: 1px solid #000000;}
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .cancel-btn:hover,
+.corporate-page-popup-model .corporate-page-popup-success-form .pop-right-content .cancel-btn:focus {border: 1px solid #000000;outline: none;box-shadow:none;}
+.corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg {padding: 30px;width: 50%;margin: 0px auto;height: 70vh;display: flex;justify-content: center;align-items: center;text-align: center;}
+.corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg .succuess-msg-heading {color: #231f20;font-size: 16px;font-weight: 700;line-height: 22px;margin-top: 25px; margin-bottom: 15px;}
+.corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg .succuess-msg-subHeading {color: #000000;font-size: 13px;line-height: 20px;margin-bottom: 19px;}
+
+.corporate-page-popup-form .pop-right-form .global-form form .isd-select .bootstrap-select>.dropdown-toggle {padding: 10px 23px 10px 12px;}
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-control {padding-left: calc(30% + 16px);}
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-group.isd-select {width: 30%;}
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-control.isd-code {padding: 0px;}
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-group .floating-label{left: calc(30% + 16px);}
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-group .inputText:focus ~ .floating-label,
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-control:focus ~ .floating-label,
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label,
+.corporate-page-popup-form .pop-right-form .global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label{top: -9px;left: 10px;font-size: 12px;line-height: 18px; opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+
+
+@media only screen and (max-width: 768px) { 
+	.corporate-page-popup-model .corporate-page-popup-form .pop-right-form {padding: 30px 15px 30px 0px;}
+	.corporate-page-popup-model .corporate-page-popup-form.download-brochure-popup .pop-right-form ,
+	.corporate-page-popup-model .corporate-page-popup-form.free_assessment .pop-right-form {padding: 30px;}
+	.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .form-submit .kh3-btn {width: 100%;padding: 10px 16px 11px;}
+	.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .pop-right-content-heading{margin-bottom: 25px;}
+	.corporate-page-popup-model .to-close {right: 10px;top: 5px;}
+	.corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg {width: 100%;padding: 0;height: 50vh;}
+}
+
+@media only screen and (max-width: 576px) { 
+	.corporate-page-popup-model .corporate-page-popup-form .pop-right-form {padding: 0px;}
+	.corporate-page-popup-model .corporate-page-popup-form.download-brochure-popup .pop-right-form ,
+	.corporate-page-popup-model .corporate-page-popup-form.free_assessment .pop-right-form {padding: 0px;}
+	.corporate-page-popup-model .corporate-page-popup-form .pop-right-form .form-submit .kh3-btn {width: 100%;padding: 10px 16px 11px;}
+	.corporate-page-popup-model .to-close {right: 10px;top: 5px;}
+	.corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg {width: 100%;padding: 0;height: 50vh;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+    .corporate-page-popup-model .corporate-page-popup-form .pop-left-content,
+    .corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .pop-right-content-subheading {display: none !important;}
+    .corporate-page-popup-model .corporate-page-popup-form .pop-right-form{padding: 30px 15px;}
+    .corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg {height: 75vh;}
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : landscape) {
+    .corporate-page-popup-model .corporate-page-popup-form .pop-left-content,
+    .corporate-page-popup-model .corporate-page-popup-form .pop-right-form .global-form form .pop-right-content-subheading {display: none !important;}
+    .corporate-page-popup-model .corporate-page-popup-form .pop-right-form{padding: 30px 15px;}
+    .corporate-page-popup-model .corporate-page-popup-success-form .succuess-msg {height: 75vh;}
+}
+/* Corporate Page Form Style Ends  */
+
+/* user onboarding popup styles starts */
+.user-onboard-modal .modal-dialog{max-width: 957px;margin:25px auto;height:554px}
+.user-onboard-modal .modal-body{padding:0}
+.user-onboard-modal .align-v-center{text-align:center;height:100%;width:100%;display:table;background-color: #f7faf7;padding:24px}
+.user-onboard-modal .align-v-in{display: table-cell;vertical-align: middle;}
+.user-onboard-modal .align-v-center h4{margin:25px 0 16px;color: #231f20;font-size: 23px;font-weight: 500;letter-spacing: normal;line-height:normal;font-family:'Playfair Display', serif;}
+.user-onboard-modal .align-v-center p{color: #333333;font-size: 14px;font-weight: 400;letter-spacing: normal;line-height: 21px;text-align: center;margin:0 24px}
+.user-onboard-modal .right-info{padding:46px 25px 24px 0;min-height:554px}
+.user-onboard-modal .right-info h5{color: #231f20;font-size: 16px;font-weight: 700;line-height: 24px;}
+.user-onboard-modal .right-info ul{margin:14px 0 24px}
+.user-onboard-modal .right-info ul li{padding-left:30px;margin-bottom:4px;position:relative;color: #231f20;font-size: 14px;font-weight: 600;line-height: 24px;}
+.user-onboard-modal .right-info ul li:before{position: absolute;left: 6px;top: 4px;content: "";transform: rotate(45deg);height: 15px;width: 8px;border-bottom: 2px solid #666;border-right: 2px solid #666;}
+.user-onboard-modal .right-info ul li a{color: #586feb!important;}
+.user-onboard-modal .right-info .steps{margin-bottom:50px;}
+.help-line{position:absolute;bottom:8px;padding:8px 14px;border-top: 1px solid #bbbbbb;}
+.help-line p{letter-spacing: normal;color: #231f20;font-size: 14px !important;font-weight: 600 !important;line-height: 24px;}
+.help-line p a{color: #586feb!important;}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .user-onboard-modal .right-info{padding:24px;min-height:auto}
+  .help-line{background-color:#231f20;text-align:center;padding:8px 0;position:relative;bottom:0px;}
+  .help-line p{line-height:17px;font-size: 13px;color:#fff}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .help-line{border-top:1px solid #bbbbbb;background-color:#fff;text-align:center;padding:8px 0;position:relative;bottom:0px;}
+  .help-line p{line-height:17px;font-size: 13px;color:#231f20}
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.global-form form .form-group .floating-label{font-size: 14px;line-height: 17px;}
+	.global-form form .form-group .inputText:focus ~ .floating-label,
+	.global-form form .form-group .inputText:not(:focus):valid ~ .floating-label{ /* top: -9px; */ /*left: 10px; */ font-size: 12px;opacity: 1;color: #231f20;}
+	.global-form form .form-group .inputText.not-required:focus ~ .floating-label { /* top: -9px; left: 10px;*/font-size: 12px;opacity: 1;color: #231f20;}
+	.global-form form .form-group .inputText.not-required:not(:focus):valid ~ .floating-label{ /* top: -9px; */left: 16px;font-size: 12px;opacity: 1;color: #231f20;}
+	.global-form form .form-group .inputText.not-required:not(:placeholder-shown) ~ .floating-label {left: 10px !important;}
+	.global-form form .form-group .floating-label {position: absolute;pointer-events: none;left: 15px;top: 14px;font-size: 12px;color: #777777;transition: 0.2s ease all;}
+	.global-form form .form-group.isd-select{margin-right:0px;top: 0px;margin-bottom:25px}
+	.global-form form .form-group.phone{margin-left: 0px;}
+	.global-form form .form-control{font-size:12px;height: 45px;padding: 12px;}
+	.global-form form .pay-btn a{text-align: center;display:block;float:none;padding: 12px 20px !important;}
+	.global-form form .pay-btn button{text-align: center;display:block;float:none;padding: 12px 20px !important;}
+	.bootstrap-select .dropdown-toggle .filter-option-inner-inner{font-size: 12px;line-height: 20px;}
+	.global-form .select-options i.common-icons {top:19px !important;transform: scale(.66666666);}
+	.modal-dialog{margin:10px;}
+	.global-form form .contact-number-full .bootstrap-select button[title="Select ISD"] .filter-option-inner-inner{transform: translateY(3px);}
+	.global-form form .contact-number-full .bootstrap-select .dropdown-toggle .filter-option-inner-inner {transform: translateY(3px);}
+	.global-form form .select-options.form-group .select-floating-label{top: 12px;}
+	.bootstrap-select .dropdown-toggle .filter-option-inner-inner{transform: translate(0px, 0px);}
+	.global-form .contact-number-full .select-options i.common-icons {top: 19px !important;}
+	.global-form form .contact-number-full .form-group .floating-phone {top: 12px;}
+
+}
+@media only screen and (max-width: 767px){
+	.user-onboard-modal .align-v-center{padding:16px 12px;background-color: #ffffff;border-bottom:1px solid #bbbbbb;}
+  	.user-onboard-modal .align-v-center h4{font-size:18px;margin:13px 0}
+  	.user-onboard-modal .align-v-center p{margin:0;font-size:13px}
+  	.user-onboard-modal .align-v-in img{width:52px}
+  	.user-onboard-modal .right-info{padding:16px 12px;min-height: auto;}
+  	.user-onboard-modal .right-info ul li{font-size:13px;line-height:21px}
+  	.user-onboard-modal .right-info .steps{margin-bottom:20px}
+  	.user-onboard-modal .right-info h5{font-size:14px}
+  	/* .user-onboard-modal .right-info .help-line{text-align:center;padding:8px 0 0;position:relative;bottom:-10px;}
+  	.user-onboard-modal .right-info .help-line p{line-height:17px;font-size: 13px;} */
+  	.help-line{background-color:#231f20;text-align:center;padding:8px 0;position:relative;bottom:0px;}
+	.help-line p{line-height:17px;font-size: 13px;color:#fff !important;}
+	/* .try-for-free-modal .modal-dialog{width:100%} */
+}
+@media only screen and (max-width: 576px){
+	.modal-dialog .modal-header{padding:20px 20px 0!important}
+	.modal-body{padding:20px!important}
+	.global-form form .form-group .floating-label{font-size: 12px;}
+	.global-form form .form-group,.global-form form .select-options {margin-bottom: 25px;}
+	.global-form form .form-group .floating-label, .global-form form .form-group textarea + .floating-label{top:14px}
+	.global-form form .contact-number-full .form-group.phone {margin-bottom: 25px;}
+	.global-form form .form-group.isd-select{width:100%}
+	.global-form form .contact-number .form-group.isd-select {width: 24% !important;}
+	.global-form form .contact-number .bootstrap-select .dropdown-menu{width:255px !important;left:0px!important}
+	.global-form form .contact-number-full .form-control{padding-left: calc(25% + 16px);}
+	.global-form form .contact-number-full .form-group .floating-label{top: 13px;left: calc(25% + 16px);}
+	.global-form form .contact-number-full .form-group.isd-select{width: 25% !important;}
+	.global-form form .contact-number-full .bootstrap-select .dropdown-menu{width:255px !important;left:0px !important}
+	.global-form form .contact-number-full .bootstrap-select button[title="Select ISD"] .filter-option-inner-inner{transform: translateY(3px);}
+	.global-form form .contact-number-full .form-group .inputText:focus ~ .floating-label,
+	.global-form form .contact-number-full .form-control:focus ~ .floating-label,
+	.global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label,
+	.global-form form .contact-number-full .form-group .inputText:not(:focus):valid ~ .floating-label{top: -9px;left: calc(0% + 10px);font-size: 12px;opacity: 1;color: #231f20;background: #fff;padding: 0 6px;}
+	.global-form form .form-control{font-size:12px;padding: 12px 15px;}
+	.global-form form .form-label {font-size: 12px;top: 25px;}
+	/* .global-form form .form-group .inputText:focus ~ .floating-label,
+	.global-form form .form-group .inputText:not(:focus):valid ~ .floating-label{top: -9px;} */
+	.global-form form .form-group .error,
+	.global-form form .select-options .error{font-size: 9px;margin-top: 2px;}
+	.global-form form .form-toggled .form-label {top:-5px!important}
+	.global-form form .form-control:focus ~ .form-label{top:5px!important;font-size: 12px;color:#231f20;}
+	.global-form form .pay-btn a{text-align: center;display:block;float:none;padding: 12px 20px !important;}
+	.global-form form .pay-btn button{width: 100%;text-align: center;display:block;float:none;padding: 12px 20px !important;}
+	  
+	.global-form form .contact-number .select-options .form-control{padding: 12px 10px;}
+	.bootstrap-select .dropdown-toggle .filter-option-inner-inner{font-size: 14px;line-height: 17px;}
+	.custom-checkbox{margin:10px 0 0!important}
+	.bootstrap-select .dropdown-menu{max-height:255px!important}
+	.bootstrap-select .dropdown-menu.show {left: 0px !important;padding: 0;}
+	.contact-number .bootstrap-select .dropdown-menu .inner.show{max-height:250px!important}
+
+
+	.bootstrap-select .dropdown-toggle .filter-option-inner-inner {transform: translate(0px, 0px);}
+	.global-form form .select-options.form-group .select-floating-label{top: 13px;}
+	.global-form .contact-number-full .select-options i.common-icons {top: 19px !important;}
+}
+
+
+
+
+/******************************************************************************************************************/
+/*****************                Bootstrap select Style Starts                 ***********************************/
+/******************************************************************************************************************/
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select>select.mobile-device:focus+.dropdown-toggle{outline:0px !important;outline-offset:0px !important;box-shadow: none;}
+.bootstrap-select>.dropdown-toggle{background: #ffffff00 !important;border: none;padding: 10px 0px 11px 16px;padding-right: 25px;}
+.isd-select .bootstrap-select>.dropdown-toggle {padding: 10px 23px 10px 15px;}
+.bootstrap-select .dropdown-menu {max-height: 250px !important; max-width: 100% !important;}
+.bootstrap-select .dropdown-menu.show{left:0px !important}
+.bootstrap-select .dropdown-menu.inner.show{overflow-Y:scroll;scrollbar-color: #ccc #fff0;scrollbar-width: thin;}
+.bootstrap-select .dropdown-menu.inner.show::-webkit-scrollbar {width: 6px;}
+.bootstrap-select .dropdown-menu.inner.show::-webkit-scrollbar-thumb {background: #cccccc;border-radius: 6px;}
+.bootstrap-select .dropdown-menu.inner.show::-webkit-scrollbar-thumb:hover {background: #cccccc;}
+.bootstrap-select .dropdown-menu.inner.show::-webkit-scrollbar-track {border-radius: 6px;background: #bbbbbb;}
+.bootstrap-select .dropdown-menu li a.dropdown-item.inner-text{padding: 3px 15px;color:#231f20;font-size: 13px;line-height: 20px;}
+.bootstrap-select .dropdown-menu li a.dropdown-item.inner-text.active{color: #fff !important;text-decoration: none !important;background-color: #007bff !important;}
+.bootstrap-select .dropdown-menu li a.dropdown-item.inner-text:hover{background: #bbbbbb!important;}
+.bootstrap-select .dropdown-menu li a.dropdown-item.inner-text:focus{outline: none;}
+.bootstrap-select .dropdown-menu .dropdown-item .first {min-width: 40px;display: inline-block;}
+.bootstrap-select .dropdown-menu .dropdown-item .second {display: inline-block;padding-left: 15px;}
+.bootstrap-select .dropdown-menu.open li span {white-space: normal;}
+.bootstrap-select .btn-light:not(:disabled):not(.disabled).active:focus,
+.bootstrap-select .btn-light:not(:disabled):not(.disabled):active:focus,
+.bootstrap-select .show>.btn-light.dropdown-toggle:focus{box-shadow: 0 0 0 0 rgba(248,249,250,.5);}
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover{color: #231f20;box-shadow:none!important}
+.bootstrap-select .dropdown-menu li a.opt {position: relative;padding-left: 15px !important;white-space: unset;font-size: 14px;line-height: 14px;}
+.bootstrap-select .dropdown-menu li a span.text {display: inline-block;white-space: initial;font-size: 13px;line-height: 20px;}
+.bootstrap-select .dropdown-menu li a {padding: 6px 10px;font-size: 13px;line-height: 20px;}
+.bootstrap-select .dropdown-menu li a:hover{background-color:#bbbbbb!important}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {margin-bottom:0!important;color:#231f20;overflow: hidden;font-size: 13px;line-height: 20px;transform: translate(0px, 0px);}
+.bootstrap-select .dropdown-toggle::after {display: inline-block;margin-left: .255em;margin-bottom: 8px;vertical-align: .255em;content: "";border-top: .3em solid !important;border-right: .3em solid transparent;border-bottom: 0 !important;border-left: .3em solid transparent;}
+.bootstrap-select .dropdown-header {padding: 0px 15px;}
+.contact-number .bootstrap-select .dropdown-menu {width: 250px;max-width: 250px !important;}
+.contact-number .bootstrap-select .dropdown-menu .inner.show {overflow-x: hidden;}
+.contact-number .bootstrap-select .dropdown-menu .dropdown-item .first{min-width:40px!important}
+.contact-number {position:relative;}
+.contact-number i.common-icons{top: 20px!important;transform: scale(.7);}
+.contact-number .bootstrap-select .dropdown-menu li a.dropdown-item.active{color: #231f20 !important;text-decoration: none !important;background-color: #bbbbbb !important;}
+/******************************************************************************************************************/
+/*****************                 Bootstrap select Style Ends                  ***********************************/
+/******************************************************************************************************************/
+
+.global-form form input.form-control:-internal-autofill-selected {-moz-appearance: menulist-button;-webkit-appearance: menulist-button;background-color: transparent !important;background-image: none !important;color: -internal-light-dark(black, white) !important;}
+.modal .modal-header button.close{opacity: 1 !important;}
+.modal .modal-header button.close:focus{outline: none !important;opacity: 1 !important;}
+
+
+/******************************************************************************************************************/
+/*****************               Bootstrap 3 popup form Style Ends               ***********************************/
+/******************************************************************************************************************/
+.modal-dialog{max-width:796px}
+.modal-body{padding:30px}
+.modal-title{font-size: 16px;line-height: 25px; font-weight: bold;color: #231f20;margin-bottom: 3px;}
+.modal-dialog p{display:block; font-size: 13px;line-height:20px;color: #231f20;font-weight:normal}
+.modal-dialog .modal-header{padding:27px 30px 0;border:0 none!important}
+.global-form form .pay-btn button{height:40px;min-width: 150px;padding:11px 45px 11px 14px!important;font-size: 14px;font-weight: 600;line-height:normal;text-transform: capitalize;}
+.global-form form .pay-btn button span{padding:10px 18px;background-color:transparent!important}
+.global-form.before_success{padding: 10px 0px 0px !important;}
+.bootstrap-select .dropdown-toggle::after{display: none;}
+.sticky-request-popup .global-form.before_success{padding: 10px 0px 0px !important;}
+.sticky-request-popup .bootstrap-select .dropdown-toggle::after{display: none;}
+
+/******************************************************************************************************************/
+/*****************               Bootstrap 3 popup form Style Ends              ***********************************/
+/******************************************************************************************************************/
+
+/* Forms */
+/*custom checkbox styles for apply coupon*/
+.checkbox label::after{background:#231f20}
+.checkbox input[type="checkbox"], .checkbox input[type="radio"]{opacity:0}
+.custom-checkbox:last-child{border:0 none!important}
+.custom-checkbox .opt-label{line-height:15px;padding-left: 34px;display:block;font-size: 12px;color: #3f3f3f;font-weight:normal!important}
+.custom-checkbox .opt-label a{color:#586feb !important;text-decoration:none!important}
+.custom-checkbox input{position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.checkmark {position: absolute;top: 2px;left: 0; height: 25px;width: 25px;background-color: #fff;border:2px solid #777777;border-radius:4px}
+.custom-checkbox:hover input ~ .checkmark { background-color: #fff;}
+.custom-checkbox input:checked ~ .checkmark {background-color: #231f20;border:0 none;border-radius:4px} 
+.checkmark:after {content: "";position: absolute;display: none;}
+.custom-checkbox .checkmark:after {left: 9px;top: 7px;width: 5px;height: 10px;border: solid #26d400;border-width: 0 3px 3px 0;transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.custom-checkbox input:checked ~ .checkmark:after {display: block;}
+.custom-checkbox{display: block;position: relative;padding:0;border-bottom:1px solid #ccc;margin:5px 0px 0px;cursor: pointer;font-size: 14px;font-weight: bold;color: #231f20;user-select: none;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;}
+
+.custom-checkbox .code{display:block;font-size: 14px;font-weight: bold;color: #231f20;}
+.custom-checkbox span{display:block;font-size: 14px;color: #231f20;font-weight:normal!important}
+.checkmark {position: absolute;top: 4px;right: 0; height: 25px;width: 25px;background-color: #fff;border:1px solid #ccc;border-radius:4px}
+.custom-checkbox:hover input ~ .checkmark { background-color: #fff;}
+.custom-checkbox input:checked ~ .checkmark {background-color: #231f20;border:0 none;border-radius:4px} 
+.checkmark:after {content: "";position: absolute;display: none;}
+.custom-checkbox .checkmark:after {left: 9px;top: 7px;width: 5px;height: 10px;border: solid #26d400;border-width: 0 3px 3px 0;transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.custom-checkbox input:checked ~ .checkmark:after {display: block;}
+/*Form checkbox and radio*/
+
+.radio { padding-left: 20px; }
+.radio label { display: inline-block; vertical-align: middle; position: relative; padding-left: 5px; }
+.radio label::before { content: ""; display: inline-block; position: absolute; width: 17px; height: 17px; left: 0; margin-left: -20px; border: 1px solid #cccccc; border-radius: 50%; background-color: #fff; -webkit-transition: border 0.15s ease-in-out; -o-transition: border 0.15s ease-in-out; transition: border 0.15s ease-in-out; }
+.radio label::after { display: inline-block; position: absolute; content: " "; width: 11px; height: 11px; left: 3px; top: 3px; margin-left: -20px; border-radius: 50%; background-color: #555555; -webkit-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0); -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+.radio input[type="radio"] { opacity: 0; z-index: 1; }
+.radio input[type="radio"]:focus + label::before { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+.radio input[type="radio"]:checked + label::after { -webkit-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); }
+.radio input[type="radio"]:disabled + label { opacity: 0.65; }
+.radio input[type="radio"]:disabled + label::before { cursor: not-allowed; }
+.radio.radio-inline { margin-top: 0; }
+.radio-primary input[type="radio"] + label::after { background-color: #337ab7; }
+.radio-primary input[type="radio"]:checked + label::before { border-color: #337ab7; }
+.radio-primary input[type="radio"]:checked + label::after { background-color: #337ab7; }
+.radio-danger input[type="radio"] + label::after { background-color: #d9534f; }
+.radio-danger input[type="radio"]:checked + label::before { border-color: #d9534f; }
+.radio-danger input[type="radio"]:checked + label::after { background-color: #d9534f; }
+.radio-info input[type="radio"] + label::after { background-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::before { border-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::after { background-color: #5bc0de; }
+.radio-warning input[type="radio"] + label::after { background-color: #f0ad4e; }
+.radio-warning input[type="radio"]:checked + label::before { border-color: #f0ad4e; }
+.radio-warning input[type="radio"]:checked + label::after { background-color: #f0ad4e; }
+.radio-success input[type="radio"] + label::after { background-color: #ff585c; }
+.radio-success input[type="radio"]:checked + label::before { border-color: #ff585c; }
+.radio-success input[type="radio"]:checked + label::after { background-color: #ff585c; }
+input[type="checkbox"].styled:checked + label:after, input[type="radio"].styled:checked + label:after { font-family: 'FontAwesome'; content: "\f00c"; }
+input[type="checkbox"] .styled:checked + label::before, input[type="radio"] .styled:checked + label::before { color: #fff; }
+input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styled:checked + label::after { color: #fff; }
+/*Form checkbox and radio*/
+
+.bootstrap-select button[title="Select ISD"] .filter-option-inner-inner,
+.bootstrap-select button[title="Select Country"] .filter-option-inner-inner,
+.bootstrap-select button[title="Select Course"] .filter-option-inner-inner, .bootstrap-select button[title="Select Identification Type"] .filter-option-inner-inner,
+.bootstrap-select button[title="Select City"] .filter-option-inner-inner {font-size: 13px;line-height: 20px;transform: translate(-1px, 0px); color:#ffffff}
